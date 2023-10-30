@@ -51,6 +51,10 @@
 		60EC9AB82AEFB76500B0DDD9 /* QRAndBarCodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				60EC9AC72AEFC12F00B0DDD9 /* Model */,
+				60EC9AC82AEFC14000B0DDD9 /* View */,
+				60EC9AC92AEFC14600B0DDD9 /* ViewModel */,
+				60EC9ACA2AEFC14F00B0DDD9 /* Screens */,
 				60EC9AB92AEFB76500B0DDD9 /* QRAndBarCodeScannerApp.swift */,
 				60EC9ABB2AEFB76500B0DDD9 /* ContentView.swift */,
 				60EC9ABD2AEFB76800B0DDD9 /* Assets.xcassets */,
@@ -65,6 +69,34 @@
 				60EC9AC02AEFB76800B0DDD9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		60EC9AC72AEFC12F00B0DDD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60EC9AC82AEFC14000B0DDD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60EC9AC92AEFC14600B0DDD9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		60EC9ACA2AEFC14F00B0DDD9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
