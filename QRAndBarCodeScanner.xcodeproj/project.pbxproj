@@ -11,6 +11,9 @@
 		60EC9ABC2AEFB76500B0DDD9 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC9ABB2AEFB76500B0DDD9 /* ScanView.swift */; };
 		60EC9ABE2AEFB76800B0DDD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60EC9ABD2AEFB76800B0DDD9 /* Assets.xcassets */; };
 		60EC9AC12AEFB76800B0DDD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60EC9AC02AEFB76800B0DDD9 /* Preview Assets.xcassets */; };
+		60EC9ACC2AEFC28600B0DDD9 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC9ACB2AEFC28600B0DDD9 /* CreateView.swift */; };
+		60EC9ACE2AEFC29500B0DDD9 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC9ACD2AEFC29500B0DDD9 /* HistoryView.swift */; };
+		60EC9AD02AEFC2B500B0DDD9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC9ACF2AEFC2B500B0DDD9 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		60EC9ABB2AEFB76500B0DDD9 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		60EC9ABD2AEFB76800B0DDD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60EC9AC02AEFB76800B0DDD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		60EC9ACB2AEFC28600B0DDD9 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		60EC9ACD2AEFC29500B0DDD9 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		60EC9ACF2AEFC2B500B0DDD9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				60EC9ABB2AEFB76500B0DDD9 /* ScanView.swift */,
+				60EC9ACB2AEFC28600B0DDD9 /* CreateView.swift */,
+				60EC9ACD2AEFC29500B0DDD9 /* HistoryView.swift */,
+				60EC9ACF2AEFC2B500B0DDD9 /* SettingsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -169,7 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60EC9AD02AEFC2B500B0DDD9 /* SettingsView.swift in Sources */,
 				60EC9ABC2AEFB76500B0DDD9 /* ScanView.swift in Sources */,
+				60EC9ACE2AEFC29500B0DDD9 /* HistoryView.swift in Sources */,
+				60EC9ACC2AEFC28600B0DDD9 /* CreateView.swift in Sources */,
 				60EC9ABA2AEFB76500B0DDD9 /* QRAndBarCodeScannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
