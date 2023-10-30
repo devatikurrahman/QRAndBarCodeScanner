@@ -14,6 +14,7 @@
 		60EC9ACC2AEFC28600B0DDD9 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC9ACB2AEFC28600B0DDD9 /* CreateView.swift */; };
 		60EC9ACE2AEFC29500B0DDD9 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC9ACD2AEFC29500B0DDD9 /* HistoryView.swift */; };
 		60EC9AD02AEFC2B500B0DDD9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC9ACF2AEFC2B500B0DDD9 /* SettingsView.swift */; };
+		60EC9AD22AEFC4B400B0DDD9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC9AD12AEFC4B400B0DDD9 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		60EC9ACB2AEFC28600B0DDD9 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		60EC9ACD2AEFC29500B0DDD9 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		60EC9ACF2AEFC2B500B0DDD9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		60EC9AD12AEFC4B400B0DDD9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		60EC9ACA2AEFC14F00B0DDD9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				60EC9AD12AEFC4B400B0DDD9 /* HomeView.swift */,
 				60EC9ABB2AEFB76500B0DDD9 /* ScanView.swift */,
 				60EC9ACB2AEFC28600B0DDD9 /* CreateView.swift */,
 				60EC9ACD2AEFC29500B0DDD9 /* HistoryView.swift */,
@@ -181,6 +184,7 @@
 				60EC9AD02AEFC2B500B0DDD9 /* SettingsView.swift in Sources */,
 				60EC9ABC2AEFB76500B0DDD9 /* ScanView.swift in Sources */,
 				60EC9ACE2AEFC29500B0DDD9 /* HistoryView.swift in Sources */,
+				60EC9AD22AEFC4B400B0DDD9 /* HomeView.swift in Sources */,
 				60EC9ACC2AEFC28600B0DDD9 /* CreateView.swift in Sources */,
 				60EC9ABA2AEFB76500B0DDD9 /* QRAndBarCodeScannerApp.swift in Sources */,
 			);

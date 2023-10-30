@@ -8,22 +8,8 @@
 import SwiftUI
 
 struct ScanView: View {
-    
-    enum Tab {
-        case Scan
-        case Create
-        case History
-        case Setting
-    }
-    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        Text("")
     }
 }
 
