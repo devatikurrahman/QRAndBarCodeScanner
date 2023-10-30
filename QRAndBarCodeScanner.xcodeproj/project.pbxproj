@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		60EC9ABA2AEFB76500B0DDD9 /* QRAndBarCodeScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC9AB92AEFB76500B0DDD9 /* QRAndBarCodeScannerApp.swift */; };
-		60EC9ABC2AEFB76500B0DDD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC9ABB2AEFB76500B0DDD9 /* ContentView.swift */; };
+		60EC9ABC2AEFB76500B0DDD9 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC9ABB2AEFB76500B0DDD9 /* ScanView.swift */; };
 		60EC9ABE2AEFB76800B0DDD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60EC9ABD2AEFB76800B0DDD9 /* Assets.xcassets */; };
 		60EC9AC12AEFB76800B0DDD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60EC9AC02AEFB76800B0DDD9 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		60EC9AB62AEFB76500B0DDD9 /* QRAndBarCodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRAndBarCodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60EC9AB92AEFB76500B0DDD9 /* QRAndBarCodeScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRAndBarCodeScannerApp.swift; sourceTree = "<group>"; };
-		60EC9ABB2AEFB76500B0DDD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		60EC9ABB2AEFB76500B0DDD9 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		60EC9ABD2AEFB76800B0DDD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60EC9AC02AEFB76800B0DDD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,7 +56,6 @@
 				60EC9AC92AEFC14600B0DDD9 /* ViewModel */,
 				60EC9ACA2AEFC14F00B0DDD9 /* Screens */,
 				60EC9AB92AEFB76500B0DDD9 /* QRAndBarCodeScannerApp.swift */,
-				60EC9ABB2AEFB76500B0DDD9 /* ContentView.swift */,
 				60EC9ABD2AEFB76800B0DDD9 /* Assets.xcassets */,
 				60EC9ABF2AEFB76800B0DDD9 /* Preview Content */,
 			);
@@ -95,6 +94,7 @@
 		60EC9ACA2AEFC14F00B0DDD9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				60EC9ABB2AEFB76500B0DDD9 /* ScanView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60EC9ABC2AEFB76500B0DDD9 /* ContentView.swift in Sources */,
+				60EC9ABC2AEFB76500B0DDD9 /* ScanView.swift in Sources */,
 				60EC9ABA2AEFB76500B0DDD9 /* QRAndBarCodeScannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
