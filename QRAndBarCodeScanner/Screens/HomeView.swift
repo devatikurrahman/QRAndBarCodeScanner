@@ -40,6 +40,7 @@ struct HomeView: View {
                 }
                 .tag(Tab.Setting)
         }
+        .background(.black)
     }
 }
 
