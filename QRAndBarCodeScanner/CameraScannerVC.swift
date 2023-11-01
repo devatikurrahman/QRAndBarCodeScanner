@@ -8,8 +8,14 @@
 import UIKit
 import AVFoundation
 
+enum CameraError: String {
+    case invalidDeviceInput = "Something is wrong with the camera. We are unable to capture the input."
+    case invalidScannedValue = "The value scanned is not valid. This app scans EAN-8, EAN-13 and QR code."
+}
+
 protocol CameraScannerVCDelegate: AnyObject {
     func didFindScanValue(barcode: String)
+    func didFindError(error: CameraError)
 }
 
 final class CameraScannerVC: UIViewController {
@@ -26,8 +32,25 @@ final class CameraScannerVC: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupCaptureSession()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        guard let previewLayer = previewLayer else {
+            scannerDelegate?.didFindError(error: .invalidDeviceInput)
+            return
+        }
+        
+        previewLayer.frame = view.layer.bounds
+    }
+    
     private func setupCaptureSession() {
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
+            scannerDelegate?.didFindError(error: .invalidDeviceInput)
             return
         }
         
@@ -35,12 +58,14 @@ final class CameraScannerVC: UIViewController {
         do {
             try videoInput = AVCaptureDeviceInput(device: videoCaptureDevice)
         } catch {
+            scannerDelegate?.didFindError(error: .invalidDeviceInput)
             return
         }
         
         if captureSession.canAddInput(videoInput) {
             captureSession.addInput(videoInput)
         } else {
+            scannerDelegate?.didFindError(error: .invalidDeviceInput)
             return
         }
         
@@ -48,8 +73,9 @@ final class CameraScannerVC: UIViewController {
         if captureSession.canAddOutput(metaDataOutput) {
             captureSession.addOutput(metaDataOutput)
             metaDataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
-            metaDataOutput.metadataObjectTypes = [.ean8, .ean13, .qr]
+            metaDataOutput.metadataObjectTypes = [.ean8, .ean13, .qr, .microQR]
         } else {
+            scannerDelegate?.didFindError(error: .invalidDeviceInput)
             return
         }
         
@@ -58,6 +84,7 @@ final class CameraScannerVC: UIViewController {
         if let previewLayer = previewLayer {
             view.layer.addSublayer(previewLayer)
         } else {
+            scannerDelegate?.didFindError(error: .invalidDeviceInput)
             return
         }
         
@@ -66,6 +93,23 @@ final class CameraScannerVC: UIViewController {
 }
 
 extension CameraScannerVC: AVCaptureMetadataOutputObjectsDelegate {
-    
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        guard let object = metadataObjects.first else {
+            scannerDelegate?.didFindError(error: .invalidScannedValue)
+            return
+        }
+        
+        guard let machineReadableObject = object as? AVMetadataMachineReadableCodeObject else {
+            scannerDelegate?.didFindError(error: .invalidScannedValue)
+            return
+        }
+        
+        guard let barcode = machineReadableObject.stringValue else {
+            scannerDelegate?.didFindError(error: .invalidScannedValue)
+            return
+        }
+        
+        scannerDelegate?.didFindScanValue(barcode: barcode)
+    }
 }
 
