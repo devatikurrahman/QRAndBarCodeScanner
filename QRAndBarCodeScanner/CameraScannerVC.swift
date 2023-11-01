@@ -73,7 +73,7 @@ final class CameraScannerVC: UIViewController {
         if captureSession.canAddOutput(metaDataOutput) {
             captureSession.addOutput(metaDataOutput)
             metaDataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
-            metaDataOutput.metadataObjectTypes = [.ean8, .ean13, .qr, .microQR]
+            metaDataOutput.metadataObjectTypes = [.codabar, .code39, .code39Mod43, .code93, .code128, .ean8, .ean13, .gs1DataBar, .gs1DataBarLimited, .gs1DataBarExpanded, .interleaved2of5, .itf14, .upce, .qr, .microQR, .microPDF417, .pdf417, .microPDF417, .dataMatrix]
         } else {
             scannerDelegate?.didFindError(error: .invalidDeviceInput)
             return
@@ -109,7 +109,13 @@ extension CameraScannerVC: AVCaptureMetadataOutputObjectsDelegate {
             return
         }
         
+        //guard let barcodeDescriptor = machineReadableObject.descriptor else {
+        //    scannerDelegate?.didFindError(error: .invalidScannedValue)
+        //    return
+        //}
+        
         scannerDelegate?.didFindScanValue(barcode: barcode)
+        //captureSession.stopRunning()
     }
 }
 
