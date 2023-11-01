@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		603A72F92AF2CF070087F14B /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A72F82AF2CF070087F14B /* ScannerView.swift */; };
 		60A3B09F2AF172B30045821E /* CameraScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A3B09E2AF172B30045821E /* CameraScannerVC.swift */; };
 		60EC9ABA2AEFB76500B0DDD9 /* QRAndBarCodeScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC9AB92AEFB76500B0DDD9 /* QRAndBarCodeScannerApp.swift */; };
 		60EC9ABC2AEFB76500B0DDD9 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC9ABB2AEFB76500B0DDD9 /* ScanView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		603A72F82AF2CF070087F14B /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		60A3B09E2AF172B30045821E /* CameraScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerVC.swift; sourceTree = "<group>"; };
 		60EC9AB62AEFB76500B0DDD9 /* QRAndBarCodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRAndBarCodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60EC9AB92AEFB76500B0DDD9 /* QRAndBarCodeScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRAndBarCodeScannerApp.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				60EC9ACA2AEFC14F00B0DDD9 /* Screens */,
 				60EC9AB92AEFB76500B0DDD9 /* QRAndBarCodeScannerApp.swift */,
 				60A3B09E2AF172B30045821E /* CameraScannerVC.swift */,
+				603A72F82AF2CF070087F14B /* ScannerView.swift */,
 				60EC9ABD2AEFB76800B0DDD9 /* Assets.xcassets */,
 				60EC9ABF2AEFB76800B0DDD9 /* Preview Content */,
 			);
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60EC9AD02AEFC2B500B0DDD9 /* SettingsView.swift in Sources */,
+				603A72F92AF2CF070087F14B /* ScannerView.swift in Sources */,
 				60A3B09F2AF172B30045821E /* CameraScannerVC.swift in Sources */,
 				60EC9ABC2AEFB76500B0DDD9 /* ScanView.swift in Sources */,
 				60EC9ACE2AEFC29500B0DDD9 /* HistoryView.swift in Sources */,

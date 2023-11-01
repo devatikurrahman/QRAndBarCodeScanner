@@ -15,7 +15,7 @@ struct ScanView: View {
             ZStack {
                 Rectangle()
                     .foregroundColor(.black.opacity(0.5))
-                Rectangle()
+                ScannerView()
                     .frame(width: 250, height: 250)
                     .blendMode(.destinationOut)
                     .overlay(RoundedRectangle(cornerRadius: 3).stroke(.white, lineWidth: 3))
